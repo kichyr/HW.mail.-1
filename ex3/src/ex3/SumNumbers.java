@@ -5,12 +5,10 @@
  */
 package ex3;
 
-/**
- *
- * @author kichyr
- */
 public abstract class SumNumbers {
+    //Переменная суммы (при повторном вызове необходимо обнулять)
     public static int sum = 0;
+    //Рекурсивный метод поиска суммы
     public static int countSum(int N) {
         if(N == 0) return 0;
         else {
