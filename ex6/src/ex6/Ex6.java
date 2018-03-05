@@ -5,17 +5,21 @@
  */
 package ex6;
 
+
+
 /**
  *
  * @author kichyr
  */
 public class Ex6 {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        String s = "kekek";
+        System.err.println(Reverser.reverseByStack(s));
+        if(s.equals(Reverser.reverseByStack(s)))
+            System.err.println("it`s polindrom");
+        else
+            System.err.println("No");
     }
     
 }
