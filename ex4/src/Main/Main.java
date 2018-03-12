@@ -1,8 +1,17 @@
-package ex4;
+package Main;
 
+import AllAboutFamily.Child;
+import AllAboutFamily.Family;
+import AllAboutFamily.Father;
+import AllAboutFamily.Mother;
 import java.util.ArrayList;
-
-public class Ex4 {
+/**
+ *
+ * @author kichyr
+ * @task Написать программу, симулирующую семью. В семье должно быть от 2 до 5 детей. Мама и папа. В выводе члены семьи должны называть свое имя, пол и 
+ возраст
+ */
+public class Main {
     public static void main(String[] args) {
         //создадим членов семьи
         Mother mom = new Mother("Robert", "муж.", 25);

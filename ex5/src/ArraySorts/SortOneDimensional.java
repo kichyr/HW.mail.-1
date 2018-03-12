@@ -3,38 +3,25 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ex5;
+package ArraySorts;
 
 /**
  *
  * @author kichyr
+ * @description Сортировка пузырьком, характер сортировки которой зависет от флага 
  */
-public class mySimpleSort {
-    public static int sortItbyAscending(int[] a){
+public class SortOneDimensional {
+    //flagofSort 1- по возрастанию, -1 по убыванию
+    public static int sortArray(int[] a, int flagofSort){
         //счетчик операций
         int count = 0;
         for(int i = 0; i < a.length; i++)
             for(int j = i; j < a.length; j++){
                 count++;
-                if(a[j] < a[i]) {
+                if(flagofSort*a[j] < flagofSort*a[i]) {
                     int d = a[i];
                     a[i] = a[j];
                     a[j] = d; 
-                }
-            }
-        return count;
-    }
-
-    public static int sortItbyDowngrate(int[] a){
-        //счетчик операций
-        int count = 0;
-        for(int i = 0; i < a.length; i++)
-            for(int j = i; j < a.length; j++){
-                count++;
-                if(a[j] > a[i]) {
-                    int k = a[i];
-                    a[i] = a[j];
-                    a[j] = k;
                 }
             }
         return count;

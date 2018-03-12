@@ -3,18 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ex4;
+package AllAboutFamily;
 
 /**
  *
  * @author kichyr
  */
-public class Father extends Member{
+public class Mother extends Member{
 
-    public Father(String name, String sex, int age) {
+    public Mother(String name, String sex, int age) {
         super(name, sex, age);
     }
     public void sayAboutYou() {
-        System.err.println("I`m a big DADY,"+"my name: "+name+", my sex: "+sex+", my age:"+age);
+        System.out.println(String.format("I`m mom, my name: %s, my sex: %s, my age: %s", name, sex, age));
     }
+
 }

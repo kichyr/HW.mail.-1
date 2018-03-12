@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ex4;
+package AllAboutFamily;
 
 /**
  *
@@ -15,6 +15,6 @@ public class Child extends Member{
         super(name, sex, age);
     }
     public void sayAboutYou() {
-        System.out.println("I`m a stupid child,"+"my name: "+name+", my sex: "+sex+", my age:"+age);
+        System.out.println(String.format("I`m a stupid child, my name: %s, my sex: %s, my age: %s", name, sex, age));
     }
 }

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ex4;
+package AllAboutFamily;
 
 import java.util.ArrayList;
 
@@ -27,8 +27,4 @@ public class Family {
             childrens.get(i).sayAboutYou();
     }
     
-    //возможный метод добавления члена в семью
-    public void addNewMember(){
-        //something
-    }
 }

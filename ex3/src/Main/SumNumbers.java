@@ -3,13 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ex3;
+package Main;
 
-public abstract class SumNumbers {
-    //Переменная суммы (при повторном вызове необходимо обнулять)
-    public static int sum = 0;
+public class SumNumbers {
+    private int sum;
+    public int countSumofNumbers(int N){
+        sum = 0;
+        return countSum(N);
+    }
     //Рекурсивный метод поиска суммы
-    public static int countSum(int N) {
+    private int countSum(int N) {
         if(N == 0) return 0;
         else {
             sum +=N%10;
